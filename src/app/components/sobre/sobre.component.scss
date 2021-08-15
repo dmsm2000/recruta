@@ -1,0 +1,271 @@
+#section-1 {
+  background-image: url("/assets/sobre/sobre.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+
+  #inner-section {
+    background-color: rgba(10, 23, 55, 0.5);
+    height: 500px;
+  }
+}
+
+#section-2 {
+  div {
+    padding: 20px 60px;
+    background-color: black;
+
+    h2 {
+      color: #ff7d00;
+      font-size: 40px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+}
+
+#section-3 {
+  background-color: black;
+  display: flex;
+
+  div {
+    text-align: center;
+    margin: 40px;
+    width: 33%;
+
+    h3 {
+      color: #ff7d00;
+      font-size: 40px;
+    }
+
+    p {
+      padding-top: 20px;
+      color: white;
+      font-size: 25px;
+    }
+  }
+
+  #visao {
+    border: 1px solid #ff7d00;
+    border-bottom: none;
+    border-top: none;
+  }
+}
+
+#section-4 {
+  text-align: center;
+
+  div {
+    background-color: black;
+
+    h2 {
+      padding-left: 60px;
+      color: #ff7d00;
+      font-size: 40px;
+      text-align: left;
+    }
+
+    img {
+      width: 400px;
+    }
+
+    button {
+      background-color: transparent;
+      border: solid #ff7d00 1px;
+      color: #ff7d00;
+      padding: 10px 40px;
+    }
+
+    button:hover {
+      background-color: #ff7d00;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+#section-4-mobile,
+#section-3-mobile,
+#section-1-mobile,
+#outer-section-3-mobile,
+#outer-section-4-mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #section-1 {
+    display: none;
+  }
+
+  #section-1-mobile {
+    display: block;
+
+    background-image: url("/assets/sobre/sobre-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+
+    text-align: center;
+
+    #inner-section-1 {
+      background-color: rgba(10, 23, 55, 0.5);
+      height: 800px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        color: #ff7d00;
+        font-size: 40px;
+      }
+
+      h5 {
+        color: #ff7d00;
+        font-size: 30px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 20px;
+        margin: 0px 40px;
+      }
+
+      button {
+        background-color: transparent;
+        border: solid #ff7d00 1px;
+        color: #ff7d00;
+        padding: 10px 40px;
+      }
+
+      button:hover {
+        background-color: #ff7d00;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #section-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  #section-4,
+  #section-3 {
+    display: none;
+  }
+
+  #section-4-mobile,
+  #section-3-mobile,
+  #outer-section-3-mobile,
+  #outer-section-4-mobile {
+    display: block;
+  }
+
+  #outer-section-3-mobile {
+    background-color: black;
+
+    a {
+      p {
+        padding-left: 40px;
+        color: #ff7d00;
+        font-size: 30px;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    #section-3-mobile {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+
+      .transformation-pic {
+        text-align: center;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 40px;
+        color: #ff7d00;
+      }
+
+      #visao,
+      #valores,
+      #missao {
+        h3 {
+          font-size: 40px;
+          color: #ff7d00;
+          text-align: center;
+        }
+
+        p {
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #outer-section-4-mobile {
+    background-color: black;
+    text-align: center;
+
+    button {
+      background-color: transparent;
+      border: solid #ff7d00 1px;
+      color: #ff7d00;
+    }
+
+    button:hover {
+      background-color: #ff7d00;
+      color: white;
+      cursor: pointer;
+    }
+
+    #inscrever {
+      background-color: transparent;
+      border: solid #ff7d00 1px;
+      color: #ff7d00;
+      padding: 10px 40px;
+    }
+
+    #inscrever:hover {
+      background-color: #ff7d00;
+      color: white;
+      cursor: pointer;
+    }
+
+    #section-4-mobile {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+
+      .transformation-pic {
+        text-align: center;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 40px;
+        color: #ff7d00;
+      }
+    }
+  }
+
+  img {
+    width: 90%;
+  }
+}

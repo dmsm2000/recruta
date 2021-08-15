@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~swiper/swiper-bundle";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@200&display=swap");
+
+* {
+  font-family: "DM Serif Display", serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.orange {
+  background-color: #ff7d00;
+}

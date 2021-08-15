@@ -1,0 +1,175 @@
+<app-nav></app-nav>
+<section id="section-1">
+    <div id="inner-section"></div>
+</section>
+<section id="section-1-mobile">
+    <div id="inner-section-1">
+        <div>
+            <br><br><br><br><br><br><br>
+            <h5>
+                Sobre
+            </h5>
+            <h2>A RECRUTA</h2>
+            <br>
+            <p>A Recruta surge em 2016 quando a fundadora Princesa Percheiro decidiu optar por levar um estilo de vida
+                mais
+                saudável e regrado, tendo posteriormente convidado alguns dos seus amigos que naquela altura partilhavam
+                o
+                mesmo
+                propósito.
+            </p>
+            <br><br>
+            <button (click)="scroll()">LER MAIS</button>
+            <br><br><br>
+            <i class="bi bi-arrow-down-circle" style="font-size: 30px; color: white;"></i>
+        </div>
+    </div>
+</section>
+<section id="section-2">
+    <div>
+        <br><br>
+        <h2>A RECRUTA</h2>
+        <br><br>
+        <p>A Recruta surge em 2016 quando a fundadora Princesa Percheiro decidiu optar por levar um estilo de vida mais
+            saudável e regrado, tendo posteriormente convidado alguns dos seus amigos que naquela altura partilhavam o
+            mesmo
+            propósito.
+        </p>
+        <br>
+        <p>
+            Fazem parte da fundação a actual direcção da Recruta: Soraia Jafar, Braulio Lara e Miriam Alves.Volvidos 5
+            anos
+            a equipa da Recruta continua a crescer e conta actualmente com 2 personal trainers, uma nutricionista, um
+            instrutor para aulas de flexibilidade e alongamentos. </p>
+    </div>
+</section>
+<section id="section-3">
+    <div id="missao">
+        <h3>
+            Missão
+        </h3>
+        <p>Responder diretamente a melhoria
+            da qualidade de vida, visando o despertar do espirito desportivo, buscando na melhoria da versão de cada um
+            dos soldados.</p>
+    </div>
+    <div id="visao">
+        <h3>Visão</h3>
+        <p>Expansão e superação de barreiras
+            para atingir um leque vasto pretendido.</p>
+        <br><br>
+    </div>
+    <div id="valores">
+        <h3>Valores</h3>
+        <p>Espirito de coragem e valentia
+            baseados na moral e etica de uma
+            convivencia saudável no grupo,
+            numa confortável convivencia familiar. </p>
+    </div>
+</section>
+
+<div id="outer-section-3-mobile">
+    <br><br>
+    <section id="section-3-mobile">
+        <br>
+        <button (click)="previousSlide(1)"><i class="bi bi-chevron-compact-left"></i></button>
+        <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="1" [loop]="true">
+            <ng-template swiperSlide>
+                <div id="missao">
+                    <h3>
+                        Missão
+                    </h3>
+                    <br>
+                    <p>Responder diretamente a melhoria
+                        da qualidade de vida, visando o despertar do espirito desportivo, buscando na melhoria da versão
+                        de cada um
+                        dos soldados.</p>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="visao">
+                    <h3>Visão</h3>
+                    <br>
+                    <p>Expansão e superação de barreiras
+                        para atingir um leque vasto pretendido.</p>
+                    <br><br>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="valores">
+                    <h3>Valores</h3>
+                    <br>
+                    <p>Espirito de coragem e valentia
+                        baseados na moral e etica de uma
+                        convivencia saudável no grupo,
+                        numa confortável convivencia familiar. </p>
+                </div>
+            </ng-template>
+        </swiper>
+        <button (click)="nextSlide(1)"><i class="bi bi-chevron-compact-right"></i></button>
+    </section>
+    <br><br><br>
+    <a id="insta-p" href="https://www.instagram.com/recruta__">
+        <p><i class="bi bi-instagram"></i> recruta__</p>
+    </a>
+    <br>
+</div>
+
+
+<section id="section-4">
+    <div>
+        <br><br>
+        <h2 id="transformacoes">TRANSFORMAÇÕES</h2>
+        <br><br>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-lg-4 col-md-12 col-sm-12">
+                <img src="../../../assets/sobre/resultado-1.jpeg" alt="resultado">
+            </div>
+            <div class="col col-lg-4 col-md-12 col-sm-12">
+                <img src="../../../assets/sobre/resultado-2.jpeg" alt="resultado">
+            </div>
+            <div class="col col-lg-4 col-md-12 col-sm-12">
+                <img src="../../../assets/sobre/resultado-3.jpeg" alt="resultado">
+            </div>
+        </div>
+        <br><br>
+        <a href="/inscricoes"><button>INSCREVER-ME</button></a>
+        <br><br>
+    </div>
+</section>
+
+<div id="outer-section-4-mobile">
+    <br><br>
+    <section id="section-4-mobile">
+        <br>
+        <button (click)="previousSlide(2)"><i class="bi bi-chevron-compact-left"></i></button>
+        <swiper #slides2 class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="1" [loop]="true">
+            <ng-template swiperSlide>
+                <div class="transformation-pic">
+                    <img src="../../../assets/sobre/resultado-1.jpeg" alt="resultado">
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="transformation-pic">
+                    <img src="../../../assets/sobre/resultado-2.jpeg" alt="resultado">
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="transformation-pic">
+                    <img src="../../../assets/sobre/resultado-3.jpeg" alt="resultado">
+                </div>
+            </ng-template>
+        </swiper>
+        <button (click)="nextSlide(2)"><i class="bi bi-chevron-compact-right"></i></button>
+    </section>
+    <br><br>
+    <a href="/inscricoes"><button id="inscrever">INSCREVER-ME</button></a>
+    <br><br><br>
+</div>
+
+
+<div class="orange">
+    <br><br><br><br><br>
+</div>
+<app-footer></app-footer>

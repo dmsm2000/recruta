@@ -1,0 +1,195 @@
+#menu {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Stay on top */
+  top: 0;
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+
+  background-image: url("/assets/nav/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  #inner {
+    background-color: rgba(10, 23, 55, 0.5);
+    width: 100%;
+    height: 100%;
+    padding-top: 60px; /* Place content 60px from the top */
+    display: flex;
+    align-items: center;
+
+    #menu-img {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      width: 200px;
+    }
+
+    #close {
+      position: absolute;
+      top: 40px;
+      left: 90%;
+      font-size: 45px;
+    }
+
+    #close:hover {
+      cursor: pointer;
+    }
+
+    #links,
+    #insta {
+      width: 50%;
+      text-align: center;
+    }
+
+    #align-left {
+      text-align: left;
+      margin-left: 45%;
+
+      #mobile-insta {
+        display: none;
+      }
+    }
+
+    a {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    #insta {
+      h2 {
+        font-size: 40px;
+      }
+
+      h2,
+      p,
+      i {
+        color: #f58533;
+      }
+
+      i,
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+  i {
+    color: white;
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0px;
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  i {
+    padding-top: 20px;
+    font-size: 60px;
+    color: white;
+  }
+
+  div {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  i:hover {
+    cursor: pointer;
+  }
+
+  a {
+    outline: none;
+  }
+
+  img {
+    width: 250px;
+    outline: none;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    i {
+      font-size: 50px;
+      padding-right: 20px;
+    }
+
+    a {
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  #menu {
+    #inner {
+      align-content: center;
+      padding-top: 10px;
+
+      #menu-img {
+        top: 5%;
+        left: 20px;
+        width: 120px;
+      }
+      #close {
+        top: 5%;
+        left: 85%;
+        font-size: 25px;
+      }
+
+      #links {
+        text-align: center;
+        #align-left {
+          width: fit-content;
+          margin: 0px 40%;
+          text-align: center;
+          a {
+            font-size: 25px;
+          }
+
+          #mobile-insta {
+            display: block;
+            h2 {
+              font-size: 20px;
+              font-weight: bold;
+            }
+            h2,
+            p,
+            i {
+              color: #f58533;
+            }
+
+            i,
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    #insta {
+      display: none;
+    }
+  }
+}

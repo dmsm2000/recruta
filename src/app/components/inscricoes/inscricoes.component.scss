@@ -1,0 +1,115 @@
+#section-1 {
+  background-image: url("/assets/inscricoes/first.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+
+  #dark-background {
+    background-color: rgba(10, 23, 55, 0.4);
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 80px;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+    }
+  }
+}
+
+#section-2 {
+  h2 {
+    text-align: center;
+    color: #f58533;
+    font-size: 40px;
+  }
+
+  p {
+    margin: 15%;
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 0px;
+  }
+
+  input {
+    width: 100%;
+    background-color: #da6b02;
+    border: none;
+    height: 40px;
+    color: white;
+  }
+
+  #desafiate {
+    width: 70%;
+  }
+
+  #form {
+    margin: 7%;
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+
+button {
+  background-color: #da6b02;
+  color: white;
+  height: 40px;
+  font-size: 25px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#estamos-prontos {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #section-1 {
+    background-image: url("/assets/inscricoes/first-mobile.jpeg");
+  }
+
+  #somos {
+    display: none;
+  }
+
+  .line,
+  img {
+    display: none;
+  }
+
+  #section-2 {
+    margin: 0px;
+
+    p {
+      margin: 0px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  #section-1 {
+    #dark-background {
+
+      align-items: flex-end;
+
+      #estamos-prontos {
+        display: block;
+
+        h2 {
+          font-size: 35px;
+          color: rgba(255, 255, 255, 0.5);
+          -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+          text-align: center;
+          margin: 10px;
+          margin-bottom: 30px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,238 @@
+<app-nav></app-nav>
+<section id="background-1">
+    <section id="background-2">
+        <section id="section-1">
+            <div>
+                <h2>QUE TREME É FOLHA</h2>
+                <br>
+                <p>
+                    A Recruta é uma comunidade de jovens curiosos e apaixonados pela vida fit, que busca ajudar pessoas
+                    de
+                    diversas partes do mundo a desafiarem-se e a ganharem um estilo de vida mais saudável.
+                </p>
+
+            </div>
+        </section>
+        <div id="bottom-1">
+            <h4>
+                RECRUTA
+                <span><i class="bi bi-arrow-down-short"></i>SABER MAIS</span>
+            </h4>
+        </div>
+        <br><br>
+    </section>
+</section>
+
+<div class="orange">
+    <br><br><br><br><br>
+</div>
+
+<section id="section-2">
+    <br><br><br><br>
+    <h2>SOBRE NÓS</h2>
+    <br>
+    <img id="linha-sobre" src="../../../assets/home/linha laranja.jpeg" alt="linha">
+    <div style="display: flex; justify-content: center;">
+        <div class="border-circle">
+            <img class="circle" src="../../../assets/home/1.png" alt="treinador">
+            <img class="circle" src="../../../assets/home/2.png" alt="treinador">
+        </div>
+        <img id="linha-mobile" src="../../../assets/home/linha laranja.jpeg" alt="linha">
+        <div class="border-circle">
+            <img class="circle" src="../../../assets/home/3.png" alt="treinador">
+            <img class="circle" src="../../../assets/home/4.png" alt="treinador">
+        </div>
+    </div>
+    <br><br>
+    <p>
+        A Recruta conta com uma equipa de profissionais cujo principal objetivo é oferecer o melhor serviço aos seus
+        clientes e parceiros.
+        O nosso leque de serviços conta com nutricionistas e personal trainers para garantir que os soldados tenham a
+        melhor experiência possível.
+    </p>
+    <br><br>
+    <a href="/sobre"><button>SABER MAIS</button></a>
+    <br><br><br><br><br>
+</section>
+
+<section id="section-3">
+    <div id="mid"></div>
+    <div id="mid-text">
+        <br><br>
+        <h2>Benefícios da Recruta</h2>
+        <br><br>
+        <div id="folhas">
+            <h3>
+                <img src="../../../assets/home/fire-logo.jpeg" alt="logo">&nbsp; Queima calorias
+            </h3>
+            <img src="../../../assets/home/folhas.png" alt="folhas">
+        </div>
+        <p>
+            A queima de calorias é um ponto crucial para diminuir
+            e controlar o peso.
+        </p>
+        <br>
+        <h3>
+            <img src="../../../assets/home/heart-logo.jpeg" alt="logo">&nbsp; Diminui os riscos de doenças
+            cardiovasculares
+        </h3>
+        <p>
+            Melhora a saude cardiovascular ao melhorar a função
+            e calibre dos vasos sanguineos, o que aumenta o
+            fluxo sanguíneo e reduz o stress sob as paredes e dos vasos.
+        </p>
+        <br>
+        <h3>
+            <img src="../../../assets/home/brain-logo.jpeg" alt="logo">&nbsp; Alivia o stress e ansiedade
+        </h3>
+
+        <p>
+            A actividade fisica estimula bastante a produção e liberação
+            de endorfina, o hormonimo da felicidade.
+        </p>
+        <br><br>
+        <a href="/inscricoes"><button>INSCREVER-ME</button></a>
+    </div>
+</section>
+
+<section id="section-3-mobile">
+    <br><br><br>
+    <div style="background-color: white; margin-left: 30px; margin-right: 30px;">
+        <br><br>
+        <h3 style="text-align: center; color: #ff7d00; font-size: 40px;">Benefícios da Recruta</h3>
+        <br><br><br>
+        <div id="section-3-mobile-inner">
+            <button (click)="previousSlide(1)"><i class="bi bi-chevron-compact-left"></i></button>
+            <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="1" [loop]="true">
+                <ng-template swiperSlide>
+                    <h3>
+                        <img src="../../../assets/home/fire-logo.jpeg" alt="logo">&nbsp; Queima calorias
+                    </h3>
+                    <br><br><br><br>
+                    <p>
+                        A queima de calorias é um ponto crucial para diminuir
+                        e controlar o peso.
+                    </p>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <h3>
+                        <img src="../../../assets/home/heart-logo.jpeg" alt="logo">&nbsp; Diminui os riscos de doenças
+                        cardiovasculares
+                    </h3>
+                    <br><br>
+                    <p>
+                        Melhora a saude cardiovascular ao melhorar a função
+                        e calibre dos vasos sanguineos, o que aumenta o
+                        fluxo sanguíneo e reduz o stress sob as paredes e dos vasos.
+                    </p>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <h3>
+                        <img src="../../../assets/home/brain-logo.jpeg" alt="logo">&nbsp; Alivia o stress e ansiedade
+                    </h3>
+                    <br><br><br>
+                    <p>
+                        A actividade fisica estimula bastante a produção e liberação
+                        de endorfina, o hormonimo da felicidade.
+                    </p>
+                </ng-template>
+            </swiper>
+            <button (click)="nextSlide(1)"><i class="bi bi-chevron-compact-right"></i></button>
+        </div>
+        <br><br>
+    </div>
+    <br><br><br>
+</section>
+
+<section id="section-4">
+    <br><br><br>
+    <h2>
+        O QUE OS NOSSOS SOLDADOS DIZEM
+    </h2>
+    <br><br>
+    <div style="position: relative;text-align: center; display: flex; align-items: center;">
+        <button id="left" (click)="previousSlide(2)"><i class="bi bi-chevron-compact-left"></i></button>
+        <swiper #slides2 class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="1" [loop]="true">
+            <ng-template swiperSlide>
+                <div style="display: flex;">
+                    <p>“Super tenho amado a conexão entre as pessoas, existe aquele desejo e de cuidado para cada
+                        recruta, vocês têm sido impecáveis nos detalhes e isso pra mim é das melhores coisas.
+                        Continuem mesmo que eu estou a gostar muito de tudoo”</p>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div style="display: flex;">
+                    <p><br> “O que mais amo é a
+                        garra que vocês dão ao pessoal, a motivação
+                        sem deixar ninguém de fora”</p>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div style="display: flex;">
+                    <p> <br>
+                        “É bom estar envolvida neste ambiente aonde várias pessoas procuram atingir objectivos
+                        similares”
+                    </p>
+                </div>
+            </ng-template>
+        </swiper>
+        <button id="right" (click)="nextSlide(2)"><i class="bi bi-chevron-compact-right"></i></button>
+    </div>
+    <br><br><br><br>
+</section>
+
+<section id="section-5">
+    <br><br>
+    <h2>PARCEIROS</h2>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-lg-4 col-md-4 col-sm-4">
+                <img src="../../../assets/home/parceiro-1.jpeg" alt="parceiro">
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-4">
+                <img src="../../../assets/home/parceiro-2.jpeg" alt="parceiro">
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-4">
+                <img src="../../../assets/home/parceiro-3.jpeg" alt="parceiro">
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</section>
+
+<section id="section-6">
+    <br>
+    <img src="../../../assets/home/last-1.jpeg" alt="card">
+    <img src="../../../assets/home/last-2.jpeg" alt="card">
+    <img src="../../../assets/home/last-3.jpeg" alt="card">
+    <br><br>
+</section>
+
+<div class="orange">
+    <br><br><br><br><br>
+</div>
+
+<section id="section-7">
+    <br><br><br>
+    <h2>JUNTA-TE AO EXÉRCITO!!!</h2>
+    <br>
+    <div id="linha-folha">
+        <img id="linha" src="../../../assets/home/linha laranja.jpeg" alt="linha">
+        <img id="folhas" src="../../../assets/home/folhas.png" alt="folhas">
+    </div>
+    <br><br>
+    <section id="form">
+        <input #nome type="text" id="nome" name="nome" placeholder=" Nome">
+        <br><br>
+        <input #email type="email" id="email" name="email" placeholder=" Email">
+        <br><br>
+        <textarea #mensagem name="msg" id="mensagem" cols="30" rows="10"
+            placeholder=" Escreva a sua mensagem"></textarea>
+        <br><br>
+        <button (click)="sendEmail(nome.value, email.value, mensagem.value)">Enviar</button>
+    </section>
+    <br><br>
+</section>
+
+<app-footer id="contactos"></app-footer>
